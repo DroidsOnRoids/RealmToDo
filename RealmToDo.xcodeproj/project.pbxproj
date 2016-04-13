@@ -14,6 +14,9 @@
 		AE92BD141CBCCF5E005911E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92BD121CBCCF5E005911E2 /* Main.storyboard */; };
 		AE92BD161CBCCF5E005911E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE92BD151CBCCF5E005911E2 /* Assets.xcassets */; };
 		AE92BD191CBCCF5E005911E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92BD171CBCCF5E005911E2 /* LaunchScreen.storyboard */; };
+		AEE3801A1CBCE647001F2D1B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE380191CBCE647001F2D1B /* Task.swift */; };
+		AEE3801C1CBCEF77001F2D1B /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3801B1CBCEF77001F2D1B /* RealmHelper.swift */; };
+		AEE3801E1CBCF460001F2D1B /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3801D1CBCF460001F2D1B /* Object.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		AE92BD151CBCCF5E005911E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE92BD181CBCCF5E005911E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE92BD1A1CBCCF5E005911E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE380191CBCE647001F2D1B /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AEE3801B1CBCEF77001F2D1B /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		AEE3801D1CBCF460001F2D1B /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 				AE92BD151CBCCF5E005911E2 /* Assets.xcassets */,
 				AE92BD171CBCCF5E005911E2 /* LaunchScreen.storyboard */,
 				AE92BD1A1CBCCF5E005911E2 /* Info.plist */,
+				AEE380191CBCE647001F2D1B /* Task.swift */,
+				AEE3801B1CBCEF77001F2D1B /* RealmHelper.swift */,
+				AEE3801D1CBCF460001F2D1B /* Object.swift */,
 			);
 			path = RealmToDo;
 			sourceTree = "<group>";
@@ -213,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE3801A1CBCE647001F2D1B /* Task.swift in Sources */,
+				AEE3801C1CBCEF77001F2D1B /* RealmHelper.swift in Sources */,
 				AE92BD111CBCCF5E005911E2 /* DetailViewController.swift in Sources */,
 				AE92BD0F1CBCCF5E005911E2 /* MasterViewController.swift in Sources */,
+				AEE3801E1CBCF460001F2D1B /* Object.swift in Sources */,
 				AE92BD0D1CBCCF5E005911E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

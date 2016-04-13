@@ -14,11 +14,23 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var doneSwitch: UISwitch!
     
+    var task: Task?
+
+    func configureView() {
+        if let task = task {
+            titleTextField.text = task.taskTitle
+            descriptionTextView.text = task.taskDescription ?? ""
+            doneSwitch.on = task.done
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let saveButton = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(saveObject))
         navigationItem.rightBarButtonItem = saveButton
+
+        self.configureView()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -26,5 +38,23 @@ class DetailViewController: UIViewController {
     }
     
     func saveObject() {
+        if let task = task {
+            updateTask(task)
+        } else {
+            task = Task()
+            task!.add()
+            updateTask(task!)
+        }
+        
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func updateTask(task: Task) {
+        task.update { 
+            task.taskTitle = self.titleTextField.text ?? ""
+            task.taskDescription = self.descriptionTextView.text
+            task.done = self.doneSwitch.on
+            task.date = NSDate()
+        }
     }
 }
