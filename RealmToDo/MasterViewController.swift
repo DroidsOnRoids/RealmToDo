@@ -70,6 +70,7 @@ class MasterViewController: UITableViewController {
         }
 
         cell.textLabel?.attributedText = attributedText
+        cell.textLabel?.textColor = object.done ? .grayColor() : .blackColor()
         
         return cell
     }
